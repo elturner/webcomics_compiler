@@ -12,7 +12,7 @@ wget phdcomics.com -o /dev/null -O ${phd_file}
 # get information
 echo "<h2><a href=\"http://phdcomics.com/comics.php\">Ph.D. Comics</a></h2>"
 echo "<br><br>"
-cat ${phd_file} | sed -n "s/.*name=comic src=\(http:\/\/.*\.gif\).*/<img src=\"\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${phd_file} | sed -n "s/.*name=comic src=\(http:\/\/.*\.gif\).*/<img src=\"\1\"><\/img><br><br>/p"
 
 # clean up
 rm -f ${phd_file}

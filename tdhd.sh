@@ -15,7 +15,7 @@ wget thedoghousediaries.com -o /dev/null -O ${tdhd_file}
 echo "<hr><h2>The Dog House Diaries</h2><br><br>"
 
 # get information
-cat ${tdhd_file} | sed -n "s/<div class=\"object\"><a href=\".*\"><img src=\"\(http:\/\/thedoghousediaries.com\/comics.*\.png\)\" .* alt=\"\(.*\)\" title=\"\(.*\)\" class.*\/><\/a><\/div>/<img src=\"\1\"><\/img>\n<br>\n<br>\n\2\n<br>\n\3\n<br>\n/p"
+cat ${tdhd_file} | sed -n "s/<div class=\"object\"><a href=\".*\"><img src=\"\(http:\/\/thedoghousediaries.com\/comics.*\.png\)\" .* alt=\"\(.*\)\" title=\"\(.*\)\" class.*\/><\/a><\/div>/<img src=\"\1\"><\/img><br><br>\2<br>\3<br>/p"
 
 # clean up
 rm -f ${tdhd_file}

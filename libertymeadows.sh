@@ -14,9 +14,9 @@ echo "<a href=\"http://apesandbabes.com\"><h2>Liberty Meadows</h2></a>"
 echo "<br>"
 echo "<br>"
 
-cat ${liberty_file} | sed -n "s/.*<img src=\"\(http:\/\/apesandbabes.com\/comics\/.*\.gif\)\".*/<img src=\"\1\"><\/img>\n<br>\n/p"
-cat ${liberty_file} | sed -n "s/.*<img src=\"\(http:\/\/apesandbabes.com\/comics\/.*\.jpg\)\".*/<img src=\"\1\"><\/img>\n<br>\n/p"
-cat ${liberty_file} | sed -n "s/.*<img src=\"\(http:\/\/apesandbabes.com\/comics\/.*\.png\)\".*/<img src=\"\1\"><\/img>\n<br>\n/p"
+cat ${liberty_file} | sed -n "s/.*<img src=\"\(http:\/\/apesandbabes.com\/comics\/.*\.gif\)\".*/<img src=\"\1\"><\/img><br>/p"
+cat ${liberty_file} | sed -n "s/.*<img src=\"\(http:\/\/apesandbabes.com\/comics\/.*\.jpg\)\".*/<img src=\"\1\"><\/img><br>/p"
+cat ${liberty_file} | sed -n "s/.*<img src=\"\(http:\/\/apesandbabes.com\/comics\/.*\.png\)\".*/<img src=\"\1\"><\/img><br>/p"
 
 # clean up
 rm -f ${liberty_file}

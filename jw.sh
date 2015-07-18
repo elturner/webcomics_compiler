@@ -9,8 +9,14 @@ jw_file="jw.html"
 # get latest file from website
 wget www.johnnywander.com -o /dev/null -O ${jw_file}
 
+# write header
+echo "<hr>"
+echo "<h2>Johnny Wander</h2>"
+echo "<br>"
+echo "<br>"
+
 # get information
-cat ${jw_file} | sed -n "s/<div class=\".*\"><div class=\".*\"><div class=\".*\"><img src=\"\(http:\/\/www\.johnnywander\.com\/files\/comics\/.*\.jpg\)\" alt=\".*\" title=\"\(.*\)\" width.* \/><\/div><\/div><\/div>.*/<hr>\n<h2>Johnny Wander<\/h2>\n<br>\n<br>\n<img src=\"\1\"><\/img>\n<br>\n<br>\n\2\n<br>\n<br>\n/p"
+cat ${jw_file} | sed -n "s/<div class=\".*\"><div class=\".*\"><div class=\".*\"><img src=\"\(http:\/\/www\.johnnywander\.com\/files\/comics\/.*\.jpg\)\" alt=\".*\" title=\"\(.*\)\" width.* \/><\/div><\/div><\/div>.*/<hr><h2>Johnny Wander<\/h2><br><br><img src=\"\1\"><\/img><br><br>\2<br><br>/p"
 
 # clean up
 rm -f ${jw_file}

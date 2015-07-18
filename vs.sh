@@ -10,11 +10,11 @@ vs_file="virtualshackles.html"
 wget www.virtualshackles.com -o /dev/null -O ${vs_file}
 
 # get information
-cat ${vs_file} | sed -n "s/.*<img src=\"\(\/img\/.*\.jpg\)\".*\/>/<hr>\n<h2>Virtual Shackles<\/h2>\n<br>\n<br>\n<img src=\"http:\/\/www\.virtualshackles\.com\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${vs_file} | sed -n "s/.*<img src=\"\(\/img\/.*\.jpg\)\".*\/>/<hr><h2>Virtual Shackles<\/h2><br><br><img src=\"http:\/\/www\.virtualshackles\.com\1\"><\/img><br><br>/p"
 
-cat ${vs_file} | sed -n "s/.*<div id=\"orionComments\" .*>\(.*\)<\/div>/Orion: \1\n<br>\n/p"
+cat ${vs_file} | sed -n "s/.*<div id=\"orionComments\" .*>\(.*\)<\/div>/Orion: \1<br>/p"
 
-cat ${vs_file} | sed -n "s/.*<div id=\"jackComments\" .*>\(.*\)<\/div>/Jack: \1\n<br>\n<br>\n/p"
+cat ${vs_file} | sed -n "s/.*<div id=\"jackComments\" .*>\(.*\)<\/div>/Jack: \1<br><br>/p"
 
 # clean up
 rm -f ${vs_file}

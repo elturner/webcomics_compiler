@@ -16,11 +16,11 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${qc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.png\)\">/<img src=\"http:\/\/www\.questionablecontent\.net\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${qc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.png\)\">/<img src=\"http:\/\/www\.questionablecontent\.net\1\"><\/img><br><br>/p"
 
-cat ${qc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.gif\)\">/<img src=\"http:\/\/www\.questionablecontent\.net\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${qc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.gif\)\">/<img src=\"http:\/\/www\.questionablecontent\.net\1\"><\/img><br><br>/p"
 
-cat ${qc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.jpg\)\">/<img src=\"http:\/\/www\.questionablecontent\.net\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${qc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.jpg\)\">/<img src=\"http:\/\/www\.questionablecontent\.net\1\"><\/img><br><br>/p"
 
 # clean up
 rm -f ${qc_file}

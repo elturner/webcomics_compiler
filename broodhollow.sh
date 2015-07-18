@@ -15,7 +15,7 @@ wget http://broodhollow.chainsawsuit.com/ -o /dev/null -O ${broodhollow_file}
 echo "<hr><h2>Broodhollow</h2><br><br>"
 
 # get information
-cat ${broodhollow_file} | sed -n "s/<div id=.* class=\"comicpane\"><a href=.*><img src=\"\(http:\/\/broodhollow.chainsawsuit.com\/comics.*\.jpg\)\" alt=\"\(.*\)\" title=\"\(.*\)\"\/><\/a><\/div>/<img src=\"\1\"><\/img>\n<br>\n<br>\n\2\n<br>\n\3\n<br>\n/p"
+cat ${broodhollow_file} | sed -n "s/<div id=.* class=\"comicpane\"><a href=.*><img src=\"\(http:\/\/broodhollow.chainsawsuit.com\/comics.*\.jpg\)\" alt=\"\(.*\)\" title=\"\(.*\)\"\/><\/a><\/div>/<img src=\"\1\"><\/img><br><br>\2<br>\3<br>/p"
 
 # clean up
 rm -f ${broodhollow_file}

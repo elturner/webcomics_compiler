@@ -15,9 +15,9 @@ wget www.amazingsuperpowers.com -o /dev/null -O ${asp_file}
 echo "<hr><h2>Amazing Super Powers</h2><br><br>"
 
 # get information
-cat ${asp_file} | sed -n "s/<div id=\"comic-1\" class=\"comicpane\">\(.*\)<\/div>/\n<br>\n<br>\n\1\n<br>\n/p"
+cat ${asp_file} | sed -n "s/<div id=\"comic-1\" class=\"comicpane\">\(.*\)<\/div>/<br><br>\1<br>/p"
 
-cat ${asp_file} | sed -n "s/<div id=\"comic-1\" class=\"comicpane\"><img src=\"http:\/\/www\.amazingsuperpowers\.com\/comics\/.*\.png\" alt=\"\(.*\)\" title=\".*\"\/><\/div>/\n<br>\n\1\n<br>\n/p"
+cat ${asp_file} | sed -n "s/<div id=\"comic-1\" class=\"comicpane\"><img src=\"http:\/\/www\.amazingsuperpowers\.com\/comics\/.*\.png\" alt=\"\(.*\)\" title=\".*\"\/><\/div>/<br>\1<br>/p"
 
 # clean up
 rm -f ${asp_file}

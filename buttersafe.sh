@@ -15,7 +15,7 @@ echo "<a href=\"http://buttersafe.com\"><h2>Buttersafe</h2></a>"
 echo "<br>"
 echo "<br>"
 
-cat ${buttersafe_file} | sed -n "s/.*<img src=\"\(http:\/\/buttersafe.com\/comics\/.*\.jpg\)\".*/<img src=\"\1\"><\/img>\n<br>\n/p"
+cat ${buttersafe_file} | sed -n "s/.*<img src=\"\(http:\/\/buttersafe.com\/comics\/.*\.jpg\)\".*/<img src=\"\1\"><\/img><br>/p"
 
 # clean up
 rm -f ${buttersafe_file}

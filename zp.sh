@@ -15,7 +15,7 @@ echo "<br>"
 echo "<br>"
 
 # get information
-#cat ${vs_file} | sed -n "s/.*<div id=\"comic-1\" class=\"comicpane\"><img src=\"\(http.*\.jpg\).*\".*>/<img src=\"\1\"><\/img>\n<br>\n<br>\n/p"
+#cat ${vs_file} | sed -n "s/.*<div id=\"comic-1\" class=\"comicpane\"><img src=\"\(http.*\.jpg\).*\".*>/<img src=\"\1\"><\/img><br><br>/p"
 
 # clean up
 rm -f ${vs_file}

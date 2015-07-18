@@ -19,7 +19,7 @@ webpage="oglaf.com"
 wget ${webpage} -o /dev/null -O ${oglaf_file}
 
 # get information for each page of the story
-cat ${oglaf_file} | sed -n "s/.*<b><img id=\"strip\" src=\"\(\/media\/comic\/.*\.jpg\)\" alt=\"\(.*\)\" title=\"\(.*\)\" \/><\/b>/<img src=\"http:\/\/oglaf\.com\1\"><\/img>\n<br>\n<br>\n\2\n<br>\n<br>\n\3\n<br>\n<br>\n/p"
+cat ${oglaf_file} | sed -n "s/.*<b><img id=\"strip\" src=\"\(\/media\/comic\/.*\.jpg\)\" alt=\"\(.*\)\" title=\"\(.*\)\" \/><\/b>/<img src=\"http:\/\/oglaf\.com\1\"><\/img><br><br>\2<br><br>\3<br><br>/p"
 
 # get the next page of the story
 webpage=`cat ${oglaf_file} | sed -n "s/.*<a href=\"\(.*\)\"><div id=\"nx\" class=\"nav_ro\"><\/div><\/a>/oglaf\.com\1/p"`

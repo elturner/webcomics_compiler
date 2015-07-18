@@ -10,7 +10,7 @@ pa_file="pa.html"
 wget penny-arcade.com/comic -o /dev/null -O ${pa_file}
 
 # get information
-cat ${pa_file} | sed -n "s/.*<img src=\"\(http:\/\/art\.penny-arcade\.com\/photos\/.*\.jpg\)\" alt=\"\(.*\)\" \/>/<hr>\n<h2>Penny Arcade<\/h2>\n<br>\n<br>\n<img src=\"\1\"><\/img>\n<br>\n<br>\n\2\n<br>\n<br>\n/p"
+cat ${pa_file} | sed -n "s/.*<img src=\"\(http:\/\/art\.penny-arcade\.com\/photos\/.*\.jpg\)\" alt=\"\(.*\)\" \/>/<hr><h2>Penny Arcade<\/h2><br><br><img src=\"\1\"><\/img><br><br>\2<br><br>/p"
 
 # clean up
 rm -f ${pa_file}

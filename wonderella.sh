@@ -10,7 +10,7 @@ wonderella_file="wonderella.html"
 wget nonadventures.com -o /dev/null -O ${wonderella_file}
 
 # get information
-cat ${wonderella_file} | sed -n "s/.*<img src=\"\(http:\/\/nonadventures\.com\/comics\/.*\.png\)\" title=\"\(.*\)\" alt=\"\(.*\)\" \/>/<hr>\n<h2>Wonderella<\/h2>\n<br>\n<br>\n<img src=\"\1\"><\/img>\n<br>\n<br>\n\2\n<br>\n<br>\n\3\n<br>\n<br>\n/p"
+cat ${wonderella_file} | sed -n "s/.*<img src=\"\(http:\/\/nonadventures\.com\/comics\/.*\.png\)\" title=\"\(.*\)\" alt=\"\(.*\)\" \/>/<hr><h2>Wonderella<\/h2><br><br><img src=\"\1\"><\/img><br><br>\2<br><br>\3<br><br>/p"
 
 # clean up
 rm -f ${wonderella_file}

@@ -15,8 +15,8 @@ echo "<a href=\"http://strongfemaleprotagonist.com\"><h2>Strong Female Protagoni
 echo "<br>"
 echo "<br>"
 
-cat ${sfp_file} | sed -n "s/.*<img class=\".*\" title=\"\(.*\)\" src=\"\(http:\/\/strongfemaleprotagonist.com\/.*\.jpg\)\".*/<img src=\"\2\"><\/img>\n<br>\n<br>\n\1\n<br>\n/p"
-cat ${sfp_file} | sed -n "s/.*<img class=\".*\" title=\"\(.*\)\" src=\"\(http:\/\/strongfemaleprotagonist.com\/.*\.png\)\".*/<img src=\"\2\"><\/img>\n<br>\n<br>\n\1\n<br>\n/p"
+cat ${sfp_file} | sed -n "s/.*<img class=\".*\" title=\"\(.*\)\" src=\"\(http:\/\/strongfemaleprotagonist.com\/.*\.jpg\)\".*/<img src=\"\2\"><\/img><br><br>\1<br>/p"
+cat ${sfp_file} | sed -n "s/.*<img class=\".*\" title=\"\(.*\)\" src=\"\(http:\/\/strongfemaleprotagonist.com\/.*\.png\)\".*/<img src=\"\2\"><\/img><br><br>\1<br>/p"
 
 # clean up
 rm -f ${sfp_file}

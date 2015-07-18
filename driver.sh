@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/elturner/code/bash/webcomics_compiler/
+cd `dirname $0`
 
 echo "preparing..."
 ./wcc.sh

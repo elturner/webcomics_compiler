@@ -16,11 +16,11 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${ma3_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/\w*\.png\)\".*/<img src=\"http:\/\/www\.ma3comic\.com\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${ma3_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/\w*\.png\)\".*/<img src=\"http:\/\/www\.ma3comic\.com\1\"><\/img><br><br>/p"
 
-cat ${ma3_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/\w*\.gif\)\".*/<img src=\"http:\/\/www\.ma3comic\.com\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${ma3_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/\w*\.gif\)\".*/<img src=\"http:\/\/www\.ma3comic\.com\1\"><\/img><br><br>/p"
 
-cat ${ma3_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/\w*\.jpg\)\".*/<img src=\"http:\/\/www\.ma3comic\.com\1\"><\/img>\n<br>\n<br>\n/p"
+cat ${ma3_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/\w*\.jpg\)\".*/<img src=\"http:\/\/www\.ma3comic\.com\1\"><\/img><br><br>/p"
 
 # clean up
 rm -f ${ma3_file}

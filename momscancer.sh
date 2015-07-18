@@ -16,7 +16,7 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${momscancer_file} | sed -n "s/.*<img alt=\"\(.*\)\" class=\"strip\" src=\"\(.*\)\" width.*/<img src=\"\2\"><\/img>\n<br>\n<br>\n\<br>\n/p"
+cat ${momscancer_file} | sed -n "s/.*<img alt=\"\(.*\)\" class=\"strip\" src=\"\(.*\)\" width.*/<img src=\"\2\"><\/img><br><br>\<br>/p"
 
 # clean up
 rm -f ${momscancer_file}
