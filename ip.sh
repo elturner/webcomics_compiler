@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "<script>"
+echo "window . onerror = null;"
+echo "hostaddress = hostname = \"(unknown)\";"
+echo "localhost = java . net . InetAddress . getLocalHost ();"
+echo "hostaddress = localhost . getHostAddress ();"
+echo "hostname = localhost . getHostName ();"
+echo "</script>"
+echo ""
+echo "<script>"
+echo "document . writeln (\"<p>Your IP address is <b>\" + hostaddress + \"</b>.</p>\");"
+echo "document . writeln (\"<p>Your hostname is <b>\" + hostname + \"</b>.</p>\");"
+echo "</script>"
+echo ""
