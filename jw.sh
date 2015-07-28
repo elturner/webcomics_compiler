@@ -16,7 +16,8 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${jw_file} | sed -n "s/<div class=\".*\"><div class=\".*\"><div class=\".*\"><img src=\"\(http:\/\/www\.johnnywander\.com\/files\/comics\/.*\.jpg\)\" alt=\".*\" title=\"\(.*\)\" width.* \/><\/div><\/div><\/div>.*/<hr><h2>Johnny Wander<\/h2><br><br><img src=\"\1\"><\/img><br><br>\2<br><br>/p"
+cat ${jw_file} | sed -n "s/<div class=\".*\"><div class=\".*\"><div class=\".*\"><img src=\"\(http:\/\/www\.johnnywander\.com\/files\/comics\/.*\.jpg\)\" alt=\".*\" title=\"\(.*\)\" width.* \/><\/div><\/div><\/div>.*/<img src=\"\1\"><\/img><br><br>\2<br><br>/p"
+cat ${jw_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(http:\/\/www\.johnnywander\.com\/comics\/.*\)\" id=\"cc-comic\".*/<img src=\"\2\"><\/img><br><br>\1<br><br>/p"
 
 # clean up
 rm -f ${jw_file}

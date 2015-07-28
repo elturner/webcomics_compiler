@@ -15,8 +15,8 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${manly_file} | sed -n "s/.*<img src=\"\(http:\/\/thepunchlineismachismo.com\/wp-content\/uploads\/.*\.jpg\)\".*alt=\"\(.*\)\".*title=\"\(.*\)\" \/>.*/<img src=\"\1\"><\/img><br>\2<br>\3\<br>/p"
-cat ${manly_file} | sed -n "s/.*<img src=\"\(http:\/\/thepunchlineismachismo.com\/wp-content\/uploads\/.*\.png\)\".*alt=\"\(.*\)\".*title=\"\(.*\)\" \/>.*/<img src=\"\1\"><\/img><br>\2<br>\3\<br>/p"
+cat ${manly_file} | sed -n "s/.*<img src=\"\(http:\/\/thepunchlineismachismo.com\/wp-content\/uploads\/.*\.jpg\)\".*alt=\"\(.*\)\".*title=\"\(.*\)\".*/<img src=\"\1\"><\/img><br>\2<br>\3\<br>/p"
+cat ${manly_file} | sed -n "s/.*<img src=\"\(http:\/\/thepunchlineismachismo.com\/wp-content\/uploads\/.*\.png\)\".*alt=\"\(.*\)\".*title=\"\(.*\)\".*/<img src=\"\1\"><\/img><br>\2<br>\3\<br>/p"
 
 # clean up
 rm -f ${manly_file}

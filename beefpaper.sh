@@ -16,7 +16,8 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${beefpaper_file} | sed -n "s/.*<img src=\"\(http:\/\/beefpaper.com\/wp-content\/uploads\/.*\.png\)\" alt=\"\(.*\)\" title=\".*>/<hr><a href=\"http:\/\/beefpaper\.com\"><h2>Beefpaper<\/h2><\/a><br><br><img src=\"\1\"><\/img><br><br>\2<br><br>/p"
+cat ${beefpaper_file} | sed -n "s/.*<img src=\"\(http:\/\/beefpaper.com\/wp-content\/uploads\/.*\.png\)\" alt=\"\(.*\)\" title=\".*>/<img src=\"\1\"><\/img><br><br>\2<br><br>/p"
+cat ${beefpaper_file} | sed -n "s/.*<img src=\"\(http:\/\/beefpaper.com\/wp-content\/uploads\/.*\.gif\)\" alt=\"\(.*\)\" title=\".*>/<img src=\"\1\"><\/img><br><br>\2<br><br>/p"
 
 # clean up
 rm -f ${beefpaper_file}
