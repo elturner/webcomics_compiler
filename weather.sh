@@ -10,7 +10,7 @@ wget ${uri} -o /dev/null -O ${page_source}
 
 # Write out title
 echo "<hr>"
-echo "<h2>Today's Weather</h2>"
+echo "<h2><a href=\"${uri}\">Today's Weather</a></h2>"
 echo "<br>"
 echo "<br>"
 

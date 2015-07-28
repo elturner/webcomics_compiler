@@ -11,7 +11,7 @@ wget beefpaper.com -o /dev/null -O ${beefpaper_file}
 
 # write header
 echo "<hr>"
-echo "<h2>Beef Paper</h2>"
+echo "<h2><a href=\"beefpaper.com\">Beef Paper</a></h2>"
 echo "<br>"
 echo "<br>"
 
