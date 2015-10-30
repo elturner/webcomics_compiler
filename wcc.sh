@@ -41,6 +41,7 @@ case $day in
 		./broodhollow.sh    >> ${filename}
 		./dc.sh             >> ${filename}
 		./momscancer.sh     >> ${filename}
+		./quantumvibe.sh    >> ${filename}
 		./gws.sh            >> ${filename}
 		./qc.sh             >> ${filename}
 		./xkcd.sh           >> ${filename}
@@ -56,6 +57,7 @@ case $day in
 		./gws.sh            >> ${filename}
 		./manlyguys.sh      >> ${filename}
 		./sfp.sh            >> ${filename}
+		./quantumvibe.sh    >> ${filename}
 		./buttersafe.sh     >> ${filename}
 		./beefpaper.sh      >> ${filename}
 		./qc.sh             >> ${filename}
@@ -71,6 +73,7 @@ case $day in
 		./asp.sh            >> ${filename}
 		./phd.sh            >> ${filename}
 		./broodhollow.sh    >> ${filename}
+		./quantumvibe.sh    >> ${filename}
 		./vs.sh             >> ${filename}
 		./gws.sh            >> ${filename}
 		./qc.sh             >> ${filename}
@@ -85,6 +88,7 @@ case $day in
 		./jw.sh             >> ${filename}
 		./dc.sh             >> ${filename}
 		./momscancer.sh     >> ${filename}
+		./quantumvibe.sh    >> ${filename}
 		./ma3.sh            >> ${filename}
 		./gws.sh            >> ${filename}
 		./buttersafe.sh     >> ${filename}
@@ -103,6 +107,7 @@ case $day in
 		./phd.sh            >> ${filename}
 		./broodhollow.sh    >> ${filename}
 		./vs.sh             >> ${filename}
+		./quantumvibe.sh    >> ${filename}
 		./gws.sh            >> ${filename}
 		./sfp.sh            >> ${filename}
 		./qc.sh             >> ${filename}
