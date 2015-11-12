@@ -17,6 +17,8 @@ echo "<br>"
 
 # get information
 cat ${alicegrove_file} | sed -n "s/.*<img src=\"\(http:\/\/41\.media.*\.jpg\)\" alt=\"\(.*\)\">.*/<img src=\"\1\"><\/img><br><br>\2<br><br>/p"
+cat ${alicegrove_file} | sed -n "s/.*<img src=\"\(http:\/\/41\.media.*\.png\)\" alt=\"\(.*\)\">.*/<img src=\"\1\"><\/img><br><br>\2<br><br>/p"
+cat ${alicegrove_file} | sed -n "s/.*<img src=\"\(http:\/\/41\.media.*\.gif\)\" alt=\"\(.*\)\">.*/<img src=\"\1\"><\/img><br><br>\2<br><br>/p"
 
 # clean up
 rm -f ${alicegrove_file}
