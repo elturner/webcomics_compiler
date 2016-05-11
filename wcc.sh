@@ -39,6 +39,7 @@ case $day in
 		./asp.sh            >> ${filename}
 		./phd.sh            >> ${filename}
 		./broodhollow.sh    >> ${filename}
+		./drivecomic.sh     >> ${filename}
 		./dc.sh             >> ${filename}
 		./momscancer.sh     >> ${filename}
 		./quantumvibe.sh    >> ${filename}
@@ -73,6 +74,7 @@ case $day in
 		./asp.sh            >> ${filename}
 		./phd.sh            >> ${filename}
 		./broodhollow.sh    >> ${filename}
+		./drivecomic.sh     >> ${filename}
 		./alicegrove.sh     >> ${filename}
 		./quantumvibe.sh    >> ${filename}
 		./vs.sh             >> ${filename}
@@ -108,6 +110,7 @@ case $day in
 		./asp.sh            >> ${filename}
 		./phd.sh            >> ${filename}
 		./broodhollow.sh    >> ${filename}
+		./drivecomic.sh     >> ${filename}
 		./vs.sh             >> ${filename}
 		./alicegrove.sh     >> ${filename}
 		./quantumvibe.sh    >> ${filename}
