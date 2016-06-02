@@ -77,6 +77,7 @@ case $day in
 		./drivecomic.sh     >> ${filename}
 		./alicegrove.sh     >> ${filename}
 		./quantumvibe.sh    >> ${filename}
+		./backcomic.sh      >> ${filename}
 		./vs.sh             >> ${filename}
 		./gws.sh            >> ${filename}
 		./qc.sh             >> ${filename}
