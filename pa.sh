@@ -11,7 +11,9 @@ wget penny-arcade.com/comic -o /dev/null -O ${pa_file}
 
 # get information
 echo "<hr><h2><a href=\"https://www.penny-arcade.com/comic\">Penny Arade</a></h2><br><br>"
+
 cat ${pa_file} | sed -n "s/.*<img src=\"\(https:\/\/art\.penny-arcade\.com\/Comics\/.*\.jpg\)\" alt=\"\(.*\)\" .*>/<img src=\"\1\" width=\"80%\"><\/img><br><br>\2/p"
+cat ${pa_file} | sed -n "s/.*<img src=\"\(https:\/\/photos\.smugmug\.com\/Comics\/Pa-comics\/.*\.jpg\)\" alt=\"\(.*\)\" .*>/<img src=\"\1\" width=\"80%\"><\/img><br><br>\2/p"
 echo "<br><br>"
 
 # clean up
