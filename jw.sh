@@ -11,7 +11,7 @@ wget www.johnnywander.com -o /dev/null -O ${jw_file}
 
 # write header
 echo "<hr>"
-echo "<h2><a href=\"www.johnnywander.com\">Johnny Wander</a></h2>"
+echo "<h2><a href=\"http://www.johnnywander.com\">Johnny Wander</a></h2>"
 echo "<br>"
 echo "<br>"
 
