@@ -135,6 +135,7 @@ esac
 
 # always check the weather
 ./weather.sh >> ${filename}
+./wedding.sh >> ${filename}
 
 # end page
 echo "</body>" >> ${filename}
