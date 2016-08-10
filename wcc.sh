@@ -16,7 +16,6 @@ echo "<a href=\"http://www.eecs.berkeley.edu/~elturner/videos.html\"><h2>Videos<
 day=`date +"%a"`
 
 # news
-./ip.sh  >> ${filename}
 ./bbc.sh >> ${filename}
 
 # write comics based on day
@@ -135,7 +134,6 @@ esac
 
 # always check the weather
 ./weather.sh >> ${filename}
-./wedding.sh >> ${filename}
 
 # end page
 echo "</body>" >> ${filename}
