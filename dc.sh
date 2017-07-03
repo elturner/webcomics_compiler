@@ -16,11 +16,11 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${dc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.png\)\" width.*/<img src=\"http:\/\/www\.dangerouslychloe\.com\1\"><\/img><br><br>/p"
+cat ${dc_file} | sed -n "s/.*<img title=.* src=\".*\(\/comics\/.*\.png\)\" .*/<img src=\"http:\/\/www\.dangerouslychloe\.com\1\"><\/img><br><br>/p"
 
-cat ${dc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.gif\)\" width.*/<img src=\"http:\/\/www\.dangerouslychloe\.com\1\"><\/img><br><br>/p"
+cat ${dc_file} | sed -n "s/.*<img title=.* src=\".*\(\/comics\/.*\.gif\)\" .*/<img src=\"http:\/\/www\.dangerouslychloe\.com\1\"><\/img><br><br>/p"
 
-cat ${dc_file} | sed -n "s/.*<img.* src=\".*\(\/comics\/.*\.jpg\)\" width.*/<img src=\"http:\/\/www\.dangerouslychloe\.com\1\"><\/img><br><br>/p"
+cat ${dc_file} | sed -n "s/.*<img title=.* src=\".*\(\/comics\/.*\.jpg\)\" .*/<img src=\"http:\/\/www\.dangerouslychloe\.com\1\"><\/img><br><br>/p"
 
 # clean up
 rm -f ${dc_file}

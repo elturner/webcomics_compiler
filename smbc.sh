@@ -19,8 +19,8 @@ cat ${smbc_file} | sed -n "s/<div id=\"cc-comicbody\"><img title=\"\(.*\)\" src=
 
 
 # the after comic 'votey'
-cat ${smbc_file} | sed -n "s/<img src='\(http:\/\/www\.smbc-comics\.com\/comics\/.*after\.gif\)'>/<img src=\"\1\" width=\"600\"><\/img><br><br>/p"
-cat ${smbc_file} | sed -n "s/.*<img src='\(http:\/\/smbc-comics\.com\/comics\/.*after\.png\)'>/<img src=\"\1\" width=\"600\"><\/img><br><br>/p"
+cat ${smbc_file} | sed -n "s/<img src='.*smbc-comics\.com\(\/comics\/.*after\.gif\)'>/<img src=\"http:\/\/www\.smbc-comics\.com\1\" width=\"600\"><\/img><br><br>/p"
+cat ${smbc_file} | sed -n "s/.*<img src='.*smbc-comics\.com\(\/comics\/.*after\.png\)'>/<img src=\"http:\/\/www\.smbc-comics\.com\1\" width=\"600\"><\/img><br><br>/p"
 
 # clean up
 rm -f ${smbc_file}

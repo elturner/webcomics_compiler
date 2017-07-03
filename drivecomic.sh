@@ -17,6 +17,7 @@ echo "<br>"
 
 # get information
 cat ${drive_file} | sed -n "s/.*<img src=\"\(http:\/\/cdn\.drivecomic\.com\/strips\/main\/.*\.png\)\" .*/<img src=\"\1\"><\/img><br><br>/p"
+echo "<br>"
 
 # clean up
 rm -f ${drive_file}

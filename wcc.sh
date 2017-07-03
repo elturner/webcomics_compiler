@@ -44,7 +44,6 @@ case $day in
 		./quantumvibe.sh    >> ${filename}
 		./gws.sh            >> ${filename}
 		./qc.sh             >> ${filename}
-		./xkcd.sh           >> ${filename}
 		./zp.sh             >> ${filename}
 		;;
 	"Tue")
@@ -61,6 +60,7 @@ case $day in
 		./buttersafe.sh     >> ${filename}
 		./beefpaper.sh      >> ${filename}
 		./qc.sh             >> ${filename}
+		./xkcd.sh           >> ${filename}
 		./jl8.sh            >> ${filename}
 		;;
 	"Wed")
@@ -80,7 +80,6 @@ case $day in
 		./vs.sh             >> ${filename}
 		./gws.sh            >> ${filename}
 		./qc.sh             >> ${filename}
-		./xkcd.sh           >> ${filename}
 		./zp.sh             >> ${filename}
 		;;
 	"Thu")
@@ -98,6 +97,7 @@ case $day in
 		./buttersafe.sh     >> ${filename}
 		./beefpaper.sh      >> ${filename}
 		./qc.sh             >> ${filename}
+		./xkcd.sh           >> ${filename}
 		./jl8.sh            >> ${filename}
 		;;
 	"Fri")
@@ -117,7 +117,6 @@ case $day in
 		./gws.sh            >> ${filename}
 		./sfp.sh            >> ${filename}
 		./qc.sh             >> ${filename}
-		./xkcd.sh           >> ${filename}
 		./zp.sh             >> ${filename}
 		;;
 	"Sat")
@@ -126,6 +125,7 @@ case $day in
 		./smbc.sh           >> ${filename}
 		./wonderella.sh     >> ${filename}
 		./ma3.sh            >> ${filename}
+		./xkcd.sh           >> ${filename}
 		;;
 	*)
 		echo "<h1>Er, What day is it?</h1>" >> ${filename}
