@@ -24,6 +24,7 @@ case $day in
 		echo "Getting Sunday's Comics..."
 		./dilbert.sh        >> ${filename}
 		./libertymeadows.sh >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./oglaf.sh          >> ${filename}
 		./beefpaper.sh      >> ${filename}
@@ -32,6 +33,7 @@ case $day in
 		echo "Getting Monday's Comics..."
 		./dilbert.sh        >> ${filename}
 		./libertymeadows.sh >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./pa.sh             >> ${filename}
 		./tdhd.sh           >> ${filename}
@@ -50,6 +52,7 @@ case $day in
 		echo "Getting Tuesday's Comics..."
 		./dilbert.sh        >> ${filename}
 		./libertymeadows.sh >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./jw.sh             >> ${filename}
 		./ma3.sh            >> ${filename}
@@ -67,6 +70,7 @@ case $day in
 		echo "Getting Wednesday's Comics..."
 		./dilbert.sh        >> ${filename}
 		./libertymeadows.sh >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./pa.sh             >> ${filename}
 		./tdhd.sh           >> ${filename}
@@ -86,6 +90,7 @@ case $day in
 		echo "Getting Thursday's Comics..."
 		./dilbert.sh        >> ${filename}
 		./libertymeadows.sh >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./jw.sh             >> ${filename}
 		./dc.sh             >> ${filename}
@@ -104,6 +109,7 @@ case $day in
 		echo "Getting Friday's Comics..."
 		./dilbert.sh        >> ${filename}
 		./libertymeadows.sh >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./pa.sh             >> ${filename}
 		./tdhd.sh           >> ${filename}
@@ -122,6 +128,7 @@ case $day in
 	"Sat")
 		echo "Getting Saturday's Comics..."
 		./dilbert.sh        >> ${filename}
+		./nonsequitor.sh    >> ${filename}
 		./smbc.sh           >> ${filename}
 		./wonderella.sh     >> ${filename}
 		./ma3.sh            >> ${filename}
