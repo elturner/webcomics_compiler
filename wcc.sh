@@ -17,6 +17,7 @@ day=`date +"%a"`
 
 # news
 ./bbc.sh >> ${filename}
+./cnn.sh >> ${filename}
 
 # write comics based on day
 case $day in
