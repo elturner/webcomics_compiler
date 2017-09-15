@@ -10,7 +10,7 @@ wget http://lite.cnn.io/en -o /dev/null -O ${cnn_file}
 
 # write header
 echo "<hr>"
-echo "<h2><a href=\"http://http://lite.cnn.io/en/\">CNN Headlines</a></h2>"
+echo "<h2><a href=\"http://lite.cnn.io/en/\">CNN Headlines</a></h2>"
 echo "<br>"
 echo "<br>"
 
