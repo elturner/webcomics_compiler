@@ -16,10 +16,10 @@ echo "<br>"
 echo "<br>"
 
 # get information
-cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.jpg\)\" id=\"cc-comic\".*/<img src=\"\2\"><\/img><br><br>\1<br><br>/p"
-cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.jpeg\)\" id=\"cc-comic\".*/<img src=\"\2\"><\/img><br><br>\1<br><br>/p"
-cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.png\)\" id=\"cc-comic\".*/<img src=\"\2\"><\/img><br><br>\1<br><br>/p"
-cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.gif\)\" id=\"cc-comic\".*/<img src=\"\2\"><\/img><br><br>\1<br><br>/p"
+cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.jpg\)\" id=\"cc-comic\".*/<img src=\"http:\2\"><\/img><br><br>\1<br><br>/p"
+cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.jpeg\)\" id=\"cc-comic\".*/<img src=\"http:\2\"><\/img><br><br>\1<br><br>/p"
+cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.png\)\" id=\"cc-comic\".*/<img src=\"http:\2\"><\/img><br><br>\1<br><br>/p"
+cat ${gws_file} | sed -n "s/.*<img title=\"\(.*\)\" src=\"\(\/\/girlswithslingshots\.com\/comics\/.*\.gif\)\" id=\"cc-comic\".*/<img src=\"http:\2\"><\/img><br><br>\1<br><br>/p"
 
 cat ${gws_file} | sed -n "s/.*class=\"cc-newsbody\"><p>\(.*\)<\/p>.*/<br><br>\1<br><br>/p"
 

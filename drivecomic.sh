@@ -7,7 +7,7 @@ drive_file="drive.html"
 # in html to the screen
 
 # get latest file from website
-wget drive.com -o /dev/null -O ${drive_file}
+wget --tries=2 www.drivecomic.com -o /dev/null -O ${drive_file}
 
 # write header
 echo "<hr>"
