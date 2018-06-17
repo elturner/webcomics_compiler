@@ -15,7 +15,7 @@ echo "<hr><h2><a href=\"http://www.smbc-comics.com/\">SMBC</a></h2><br><br>"
 # get information
 cat ${smbc_file} | sed -n "s/<img src='\(http:\/\/www\.smbc-comics\.com\/comics\/.*\.gif\)'><br>/<img src=\"\1\" width=\"800\"><\/img><br><br>/p"
 cat ${smbc_file} | sed -n "s/<img src='\(http:\/\/www\.smbc-comics\.com\/comics\/.*\.png\)'>/<img src=\"\1\" width=\"800\"><\/img><br><br>/p"
-cat ${smbc_file} | sed -n "s/<div id=\"cc-comicbody\"><img title=\"\(.*\)\" src=\"\(.*\/comics\/.*\.png\)\" .* \/>.*/<img src=\"http:\/\/www\.smbc-comics\.com\2\" width=\"800\"><\/img><br><br>\1<br><br>/p"
+cat ${smbc_file} | sed -n "s/<div id=\"cc-comicbody\"><img title=\"\(.*\)\" src=\"\(.*\/comics\/.*\.png\)\" .* \/>.*/<img src=\"\2\" width=\"800\"><\/img><br><br>\1<br><br>/p"
 
 
 # the after comic 'votey'
