@@ -7,7 +7,8 @@ echo "<html>" >  ${filename}
 echo "<head>" >> ${filename}
 echo "<title>Webcomics</title>" >> ${filename}
 echo "</head>" >> ${filename}
-echo "<body>" >> ${filename}
+echo "<body bgcolor=\"#292929\">" >> ${filename}
+echo "<font color=\"white\">" >> ${filename}
 echo "" >> ${filename}
 echo "<a href=\"http://www.eecs.berkeley.edu/~elturner\"><h2>Home</h2></a>" >> ${filename} 
 echo "<a href=\"http://www.eecs.berkeley.edu/~elturner/videos.html\"><h2>Videos</h2></a>" >> ${filename} 
@@ -44,8 +45,6 @@ case $day in
 		./pa.sh             >> ${filename}
     echo " - PhD Comics..."
 		./phd.sh            >> ${filename}
-    echo " - Drive Comic..."
-		./drivecomic.sh     >> ${filename}
     echo " - Dangerously Chloe..."
 		./dc.sh             >> ${filename}
     echo " - Girls With Slingshots..."
@@ -92,8 +91,6 @@ case $day in
 		./pa.sh             >> ${filename}
     echo " - PhD Comics..."
 		./phd.sh            >> ${filename}
-    echo " - Drive Comic..."
-		./drivecomic.sh     >> ${filename}
     echo " - Girls With Slingshots..."
 		./gws.sh            >> ${filename}
     echo " - Questionable Content..."
@@ -168,5 +165,6 @@ case $day in
 esac
 
 # end page
+echo "</font>" >> ${filename}
 echo "</body>" >> ${filename}
 echo "</html>" >> ${filename}
