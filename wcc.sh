@@ -41,12 +41,12 @@ case $day in
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
-    echo " - Penny Arcade..."
-		./pa.sh             >> ${filename}
+    #echo " - Penny Arcade..."
+		#./pa.sh             >> ${filename}
     echo " - PhD Comics..."
 		./phd.sh            >> ${filename}
-    echo " - Dangerously Chloe..."
-		./dc.sh             >> ${filename}
+    #echo " - Dangerously Chloe..."
+		#./dc.sh             >> ${filename}
     echo " - Girls With Slingshots..."
 		./gws.sh            >> ${filename}
     echo " - Questionable Content..."
@@ -62,8 +62,8 @@ case $day in
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
-    echo " - Menage a 3..."
-		./ma3.sh            >> ${filename}
+    #echo " - Menage a 3..."
+		#./ma3.sh            >> ${filename}
     echo " - Girls With Slingshots..."
 		./gws.sh            >> ${filename}
     echo " - Manly Guys Doing Manly Things..."
@@ -87,8 +87,8 @@ case $day in
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
-    echo " - Penny Arcade..."
-		./pa.sh             >> ${filename}
+    #echo " - Penny Arcade..."
+		#./pa.sh             >> ${filename}
     echo " - PhD Comics..."
 		./phd.sh            >> ${filename}
     echo " - Girls With Slingshots..."
@@ -102,14 +102,14 @@ case $day in
 		./dilbert.sh        >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
-    echo " - Gentleman's Armchair..."
-    ./gentlemans_armchair.sh >> ${filename}
+    #echo " - Gentleman's Armchair..."
+    #./gentlemans_armchair.sh >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
-    echo " - Dangerously Chloe..."
-		./dc.sh             >> ${filename}
-    echo " - Menage a 3..."
-		./ma3.sh            >> ${filename}
+    #echo " - Dangerously Chloe..."
+		#./dc.sh             >> ${filename}
+    #echo " - Menage a 3..."
+		#./ma3.sh            >> ${filename}
     echo " - Girls With Slingshots..."
 		./gws.sh            >> ${filename}
     echo " - Buttersafe..."
@@ -129,8 +129,8 @@ case $day in
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
-    echo " - Penny Arcade..."
-		./pa.sh             >> ${filename}
+    #echo " - Penny Arcade..."
+		#./pa.sh             >> ${filename}
     echo " - PhD Comics..."
 		./phd.sh            >> ${filename}
     echo " - Drive Comic..."
@@ -148,14 +148,14 @@ case $day in
 		./dilbert.sh        >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
-    echo " - Gentleman's Armchair..."
-    ./gentlemans_armchair.sh >> ${filename}
+    #echo " - Gentleman's Armchair..."
+    #./gentlemans_armchair.sh >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
     echo " - Wonderella..."
 		./wonderella.sh     >> ${filename}
-    echo " - Menage a 3..."
-		./ma3.sh            >> ${filename}
+    #echo " - Menage a 3..."
+		#./ma3.sh            >> ${filename}
     echo " - XKCD..."
 		./xkcd.sh           >> ${filename}
 		;;

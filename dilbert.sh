@@ -21,4 +21,4 @@ echo "<br>"
 echo "<br>"
 
 # clean up
-#rm -f ${dilbert_file}
+rm -f ${dilbert_file}
