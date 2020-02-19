@@ -10,8 +10,7 @@ echo "</head>" >> ${filename}
 echo "<body bgcolor=\"#292929\">" >> ${filename}
 echo "<font color=\"white\">" >> ${filename}
 echo "" >> ${filename}
-echo "<a href=\"http://www.eecs.berkeley.edu/~elturner\"><h2>Home</h2></a>" >> ${filename} 
-echo "<a href=\"http://www.eecs.berkeley.edu/~elturner/videos.html\"><h2>Videos</h2></a>" >> ${filename} 
+echo "<a href=\"http://elturner.github.io/videos.html\"><h2>Videos</h2></a>" >> ${filename} 
 
 # get the day of the week
 day=`date +"%a"`
@@ -22,8 +21,8 @@ case $day in
 		echo "Getting Sunday's Comics..."
     echo " - Dilbert..."
 		./dilbert.sh        >> ${filename}
-    echo " - Liberty Meadows..."
-		./libertymeadows.sh >> ${filename}
+    #echo " - Liberty Meadows..."
+		#./libertymeadows.sh >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
@@ -35,8 +34,6 @@ case $day in
 		echo "Getting Monday's Comics..."
     echo " - Dilbert..."
 		./dilbert.sh        >> ${filename}
-    echo " - Liberty Meadows..."
-		./libertymeadows.sh >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
@@ -56,8 +53,8 @@ case $day in
 		echo "Getting Tuesday's Comics..."
     echo " - Dilbert..."
 		./dilbert.sh        >> ${filename}
-    echo " - Liberty Meadows..."
-		./libertymeadows.sh >> ${filename}
+#    echo " - Liberty Meadows..."
+#		./libertymeadows.sh >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
     echo " - SMBC..."
