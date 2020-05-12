@@ -115,8 +115,6 @@ case $day in
 		./qc.sh             >> ${filename}
     echo " - XKCD..."
 		./xkcd.sh           >> ${filename}
-    echo " - JL8..."
-		./jl8.sh            >> ${filename}
 		;;
 	"Fri")
 		echo "Getting Friday's Comics..."
