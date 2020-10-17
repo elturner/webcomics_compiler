@@ -18,8 +18,8 @@ echo "<br>"
 cat ${xkcd_file} | sed -n "s/<div id=\"ctitle\">\(.*\)<\/div>/<br><h3>\1<\/h3><br>/p"
 
 # get information
-cat ${xkcd_file} | sed -n "s/<img src=\"\(\/\/imgs.xkcd.com\/comics\/.*\.png\)\" title=\"\(.*\)\" alt=\"\(.*\)\" srcset=\".*\"\/>/<br><img src=\"http:\1\"><\/img><br><br>\2<br><br>\3<br>/p"
-cat ${xkcd_file} | sed -n "s/<img src=\"\(\/\/imgs.xkcd.com\/comics\/.*\.gif\)\" title=\"\(.*\)\" alt=\"\(.*\)\" srcset=\".*\"\/>/<br><img src=\"http:\1\"><\/img><br><br>\2<br><br>\3<br>/p"
+cat ${xkcd_file} | sed -n "s/<img src=\"\(\/\/imgs.xkcd.com\/comics\/.*\.png\)\" title=\"\(.*\)\" alt=\"\(.*\)\" srcset=\".*\" style=\".*\" \/>/<br><img src=\"http:\1\"><\/img><br><br>\2<br><br>\3<br>/p"
+cat ${xkcd_file} | sed -n "s/<img src=\"\(\/\/imgs.xkcd.com\/comics\/.*\.gif\)\" title=\"\(.*\)\" alt=\"\(.*\)\" srcset=\".*\"\/ style=\".*\" >/<br><img src=\"http:\1\"><\/img><br><br>\2<br><br>\3<br>/p"
 
 # add a link
 echo "<a href=\"http://www.explainxkcd.com/wiki/index.php?title=Main_Page\">Explain XKCD</a>"
