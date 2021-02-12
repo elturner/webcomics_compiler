@@ -36,6 +36,8 @@ case $day in
 		./dilbert.sh        >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
+    echo " - Sheldon comics..."
+    ./sheldoncomics.sh  >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
     #echo " - Penny Arcade..."
@@ -57,6 +59,8 @@ case $day in
 #		./libertymeadows.sh >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
+    echo " - Sheldon comics..."
+    ./sheldoncomics.sh  >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
     #echo " - Menage a 3..."
@@ -82,6 +86,8 @@ case $day in
 		./dilbert.sh        >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
+    echo " - Sheldon comics..."
+    ./sheldoncomics.sh  >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
     #echo " - Penny Arcade..."
@@ -99,6 +105,8 @@ case $day in
 		./dilbert.sh        >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
+    echo " - Sheldon comics..."
+    ./sheldoncomics.sh  >> ${filename}
     #echo " - Gentleman's Armchair..."
     #./gentlemans_armchair.sh >> ${filename}
     echo " - SMBC..."
@@ -122,6 +130,8 @@ case $day in
 		./dilbert.sh        >> ${filename}
     echo " - Nonsequitur..."
 		./nonsequitor.sh    >> ${filename}
+    echo " - Sheldon comics..."
+    ./sheldoncomics.sh  >> ${filename}
     echo " - SMBC..."
 		./smbc.sh           >> ${filename}
     #echo " - Penny Arcade..."
