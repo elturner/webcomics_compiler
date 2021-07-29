@@ -169,6 +169,9 @@ case $day in
 		;;
 esac
 
+# Links for every day.
+./weather.sh >> ${filename}
+
 # end page
 echo "</font>" >> ${filename}
 echo "</body>" >> ${filename}
